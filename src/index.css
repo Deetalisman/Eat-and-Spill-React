@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.app {
+  min-height: 66vh;
+  display: grid;
+  grid-template-columns: 34rem 44rem;
+  column-gap: 4rem;
+  align-items: start;
+  padding: 2rem;
+}
+.sidebar {
+  width: 35rem;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.selected,
+.sidebar li:hover {
+  background-color: var(--color-lightest);
+}
+.f-detail {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.sub-friend img {
+  border-radius: 50%;
+}
+.sub-friend {
+  display: flex;
+}
+.button {
+  background-color: var(--color-medium);
+  color: #343a40;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+}
+
+.button:hover {
+  background-color: var(--color-dark);
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+li {
+  padding: 0.9rem;
+}
+li:hover {
+  background-color: #ffe8cc;
+}
+form {
+  font-size: 1.6rem;
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
+  width: 40rem;
+  background-color: var(--color-lightest);
+  border-radius: 7px;
+  margin-top: 2rem;
+}
+
+.form-add-friend {
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 1.6rem;
+  padding: 1.2rem;
+}
+.form-split-bill {
+  grid-template-columns: 2fr 12rem;
+  padding: 3.2rem 4rem;
+}
+.side-button {
+  float: right;
+  margin-right: 1.2rem;
+}
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid var(--color-dark);
+}
