@@ -129,3 +129,24 @@ select:focus {
   outline: none;
   border: 1px solid var(--color-dark);
 }
+@media screen and (max-width: 840px) {
+  .app {
+    display: block;
+  }
+  .sidebar {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .form-split-bill {
+    padding: 1.5rem;
+    grid-template-columns: 1fr 12rem;
+    width: 90%;
+    margin-top: 4rem;
+  }
+  .form-add-friend {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1.6rem;
+    padding: 0.7rem;
+    width: 90%;
+  }
+}
